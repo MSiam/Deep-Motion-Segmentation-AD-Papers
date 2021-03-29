@@ -21,4 +21,4 @@
 * Competitive Collaboration Framework \[ [Paper](https://arxiv.org/pdf/1805.09806.pdf) \]
 * Instance-wise Motion and Depth \[ [Paper](https://arxiv.org/abs/1912.09351) \]
 
-If you want to add your paper create an issue.
+If you want to add your paper you can create an issue.
