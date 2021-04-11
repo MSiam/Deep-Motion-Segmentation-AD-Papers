@@ -10,8 +10,8 @@ Each of these tasks have methods that are trained **fully supervised** and **sel
 
 * SegTrack V2
 * DAVIS:
-      * Pixel-wise segmentation: 2016 Unsupervised Benchmark
-      * Instance-wise segmentation: 2017 Unsupervised Benchmark (using the 2019 paper with updated unsupervised segmentation definition and annotations)
+    * Pixel-wise segmentation: 2016 Unsupervised Benchmark
+    * Instance-wise segmentation: 2017 Unsupervised Benchmark (using the 2019 paper with updated unsupervised segmentation definition and annotations)
 
 ## Methods
 
