@@ -1,9 +1,15 @@
 # Task Definitions and Related Tasks
+I am mainly gathering works on motion segmentation in autonomous driving with the motivation it can help researchers understand better the task and its relevant ones. 
+
 * **Motion Segmentation:** pixel-wise classification of the scene to moving/static, and its extension to instance-wise segmentation.
 * **Zero-shot Video Object Segmentation:** Segmentation of visual and motion salient objects in a video sequence as defined on DAVIS benchmark. Zero-shot, indicates no prior initialization required. It is also called unsupervised-VOS or Primary object segmentation in the literature.
 * **Few-shot Video Object Segmentation:** Tracking the segmented objects in a video sequence using an initialization mask. Few/One-shot indicates the need for an initialization for the tracking method, and is also called semi-supervised-VOS in the literature.
 
-Each of these tasks have methods that are trained **fully supervised** and **self supervised**. Each of them as well can be categorized into **pixel-wise** or **instance-wise** segmentation. I prefer to use the term Zero-shot-VOS instead of Unsupervised-VOS as it can be ambiguous whether it indicates no labelled training data or just no initialization in the video sequence. I am mainly focusing on motion segmentation and its related zero-shot segmentation task papers.
+Each of these tasks have methods that are trained **fully supervised** and **self supervised**. Each of them as well can be categorized into **pixel-wise** or **instance-wise** segmentation. I prefer to use the term Zero-shot-VOS instead of Unsupervised-VOS as it can be ambiguous whether it indicates no labelled training data or just no initialization in the video sequence. 
+
+I am mainly focusing in the paper collection on:
+* Deep Motion Segmentation (specifically in Autonomous Driving application).
+* The related task for zero-shot segmentation (general-purpose video object segmentation).
 
 # Zero-shot Video Object Segmentation
 ## Datasets and Benchmarks
@@ -18,18 +24,21 @@ Each of these tasks have methods that are trained **fully supervised** and **sel
 ### Fully Supervised
 
 #### Pixel-wise Segmentation
- * MPNet
- * FusionSeg
- * LVO
- * MotAdapt
- * COSNet
- * Anchor Diffusion
- * MatNet
- * Epo-Net
+ * SFL: Joint Flow Estimation and Motion Segmentation.
+ * MPNet: Use of Optical flow encoded as RGB for learning Motion Segmentation.
+ * FusionSeg: Two-stream Motion Segmentation
+ * LVO: Two-stream with visual Memory (bi-directional Conv-GRU)
+ * MotAdapt: Teacher-student adaptation
+ * PDB: 
+ * LSMO:
+ * COSNet: Co-Attention
+ * Anchor Diffusion:
+ * MatNet: Two-stream with attention fusion on multiple levels.
+ * Epo-Net: Epipolar Constraints violation as indication of motion salient objects.
 
 #### Instance-wise Segmentation
-* RVOS
-* AGS
+* RVOS:
+* AGS:
 
 ### Self Supervised
 
@@ -63,5 +72,7 @@ Each of these tasks have methods that are trained **fully supervised** and **sel
 
 #### Instance-wise Segmentation
 * Instance-wise Motion and Depth \[ [Paper](https://arxiv.org/abs/1912.09351) \]
+
+# Notes:
 
 If you want to add your paper you can create an issue.
